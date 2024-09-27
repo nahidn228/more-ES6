@@ -106,14 +106,18 @@ const getNum = numbers.find((num) => num % 10 == 0);
 const instructor = [
   { name: "Nodi", age: 28, position: "Senior" },
   { name: "Akil", age: 26, position: "junior" },
-  { name: "Sobuj", age: 30, position: "Senior" },
+  { name: "Sobuj", age: 30, position: "senior" },
+  { name: "Sobuj Ali", age: 30, position: "senior" },
 ];
 
-// console.log(instructor[0].position);
-// const result1 = instructor[0].position.toLowerCase();
-const seniorInstructor = instructor.filter((n) => n.position == "Senior");
+const position = "Senior";
 
-//console.log(seniorInstructor);
+// console.log(instructor[0].position);
+const seniorInstructor = instructor.filter(
+  (n) => n.position.toLowerCase() == position.toLowerCase()
+);
+
+console.log(seniorInstructor);
 
 // Problem: 04
 
@@ -131,8 +135,8 @@ for (person of peoples) {
 }
 //console.log(sum);
 
-
-
+const totalAge = peoples.reduce((p, c) => p + c.age, 0);
+//console.log(totalAge);
 /*
 // Quiz question
 const nums = [1, 2, 3, 4, 5];
@@ -152,4 +156,26 @@ console.log(min([1, 3, 2]));
 
 const cube = (x) => x * x * x;
 console.log(cube(2));
+
+
+let p = "Javascript";
+let q = p;
+p = "React";
+console.log(q);
+
+const isTrue=true;
+console.log(!isTrue ? "hello" : "world")
+
+
 */
+
+
+
+
+const sum22 =(p, q)=> {
+  p + q;
+ }
+ const result22 = sum22(2, 3);
+ console.log(result22);
+
+ 
